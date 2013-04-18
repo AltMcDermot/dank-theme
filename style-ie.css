@@ -1,0 +1,182 @@
+/*
+Theme Name: Dank Theme
+Theme URI: http://marink.biz
+Author: Melton S.
+Description: Dank Theme
+Version: 1.0
+Tags: black, white, responsive, 2 column.
+*/
+
+
+
+/*reset!*/
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Century Gothic', sans-serif;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+.head{
+    background-color: #1e1e1e;
+}
+.head h1{display: inline-block;}
+.header-img{
+    display: inline-block;
+}
+
+/*MENU*/
+.top-nav{vertical-align: top;}
+.top-nav ul{display: inline-block;}
+.top-nav ul li{
+    color:#efefef;
+    font-size: 1.7em;
+    display: inline-block;
+}
+.top-nav a, .top-nav a:hover, .top-nav a:link, .top-nav a:visited{
+    color: #fff; text-decoration: none;
+}
+.top-nav-r{display: none;}
+.menu-show{display: none;}
+#toggle{display: none;}
+.menu-title{display: none;}
+/*HOMEPAGE*/
+.content-home{}
+.meta{}
+.meta, .links, .posts{
+    background-color: #000000;
+    color: #ddd;
+    font-family: Century Gothic, sans-serif;
+    vertical-align: text-top;
+}
+.meta p, .links p, .posts p {
+    font-family: 'Century Gothic', sans-serif;
+}
+/*END HOMEPAGE*/
+
+/*SINGLE PAGE*/
+#left{}
+#left .meta, #left .links{
+    background-color: #000;
+    color: #ddd;
+    padding: 5px;
+}
+.meta h2{
+    text-align: center;
+    font-size: 1.1em;
+}
+.entry{
+    background: #000;
+    color: #ddd;
+    font-family: 'Century Gothic', sans-serif;
+}
+.entry h2{
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 2em;
+}
+.entry p {
+    font-family: 'Century Gothic', sans-serif;
+}
+/*END SINGLE PAGE*/
+
+.bottom-nav{
+    text-align: center; 
+    margin: auto;
+}
+a,a:active, a:link, a:hover, a:visited{}
+
+
+
+
+#wrap{
+    width: 960px; 
+    margin:30px auto;
+}
+
+.head{
+    min-width: 700px;
+    background-color: #1e1e1e;
+    height: 50px;
+    
+    }
+    .header-img{
+        display: inline-block;
+        height: 50px;
+        width: 200px;
+    }
+.head img{height: 50px; width: 200px;}
+
+.top-nav{
+    margin: 0px 0px 0px 10px;
+    display: inline;
+    width: 410px;
+    }
+.top-nav ul li{
+    height: 30px;
+    width: 75px;
+    
+    text-align: center;
+
+    margin: 10px;
+    }
+
+/*HOMEPAGE*/
+.content-home{}
+.meta{}
+.meta, .links, .posts{
+    height:300px;
+    width:300px;
+    margin:5px;
+    display:inline-block;
+    background-color: #000;
+    }
+    .meta p, .links p, .posts p {
+        margin: 5px 5px 5px 5px;
+    }
+/*END HOMEPAGE*/
+#left{float: left; width: 310px;}
+#left .meta, #left .links{margin: 5px;}
+/*SINGLE PAGE*/
+.entry{
+    display: inline-block;
+    width: 610px;
+    min-height: 610px;
+    margin: 5px 9px;
+    }
+.entry p {
+    margin: 5px;
+}
+/*END SINGLE PAGE*/    
+.bottom-nav{text-align: center; margin: auto;}
+a,a:active, a:link, a:hover, a:visited{}
+
+
+
+
+ /*COMMENTS*/
+ .comment-single{
+    background-color: #000;
+    color: #fff;
+    width: 925px;
+    margin: 10px 0px 0px 5px;
+
+}
+#commentform p{margin: 5px 10px;}
+.commentlist{
+    margin: 0px 0px 0px 15px;
+    padding-bottom: 10px;
+}
+#respond{margin-left: 20px;}
+#comments{padding: 5px 0px 5px 5px;}
+#respond h3{margin: 0px 0px 0px 5px;}
+#respond input{width: 250px;}
+#respond textarea{
+    width:850px;
+    height: 120px;
+ }
+
+ 
+ 

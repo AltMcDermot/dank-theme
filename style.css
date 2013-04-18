@@ -1,77 +1,154 @@
+/*
+Theme Name: Dank Theme
+Theme URI: http://marink.biz
+Author: Melton S.
+Description: Dank Theme
+Version: 1.0
+Tags: black, white, responsive, 2 column.
+*/
+
 /*reset!*/
-*{margin: 0;
+*{
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+	font-family: 'Century Gothic', sans-serif;
 	vertical-align: baseline;
     box-sizing: border-box;
-    }
-
-    .head{
-        background-color: #1e1e1e;
-        }
-    .header-img{ display: inline;}
-    
-    /*MENU*/
-    .top-nav{vertical-align: top;}
-    .top-nav ul{display: inline-block;}
-    .top-nav ul li{
-        color:#efefef;
-        font-size: 1.7em;
-        display: inline-block;
-        }
-    .top-nav a, .top-nav a:hover, .top-nav a:link, .top-nav a:visited{ color: #fff; text-decoration: none;}
-    .top-nav select{display: none;}
-    
-    /*HOMEPAGE*/
-    .content-home{}
-    .meta{}
-    .meta, .links, .posts{
-        background-color: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
-        }
-        .meta p, .links p, .posts p {
-            font-family: 'Century Gothic', sans-serif;
-            font-weight: 600;
-        }
-    /*END HOMEPAGE*/
-    #left{}
-    #left .meta, #left .links{
-    }
-    /*SINGLE PAGE*/
-    .entry{
-        background: #000;
-        color: #ddd;
-        font-family: 'Century Gothic', sans-serif;
-        }
-    .entry p {
-        font-family: 'Century Gothic', sans-serif;
-        font-weight: 600;
-    }
-    /*END SINGLE PAGE*/
-    
-    .bottom-nav{
-        text-align: center; 
-        margin: auto;
-    }
-    a,a:active, a:link, a:hover, a:visited{}
+}
 
 
+/*
+Colors and fonts go here.
+Layouts are according to the breakpoints (queries) :-)
+*/
+a, a:link, a:hover, a:visited{
+    text-decoration: none;
+    color:#fff;
+}
+.head{
+    background-color: #1e1e1e;
+}
+.head h1{display: inline-block;}
+.header-img{
+    display: inline-block;
+    background-image: url('./logo.png');
+}
+.post-edit-link{color: #000!important; background-color: #fff;}
+/*MENU*/
+.top-nav{vertical-align: top;}
+.top-nav ul{display: inline-block;}
+.top-nav ul li{
+    color:#efefef;
+    font-size: 1.7em;
+    display: inline-block;
+}
+.top-nav a, .top-nav a:hover, .top-nav a:link, .top-nav a:visited{
+    color: #fff; text-decoration: none;
+}
+.top-nav-r{display: none;}
+.menu-show{display: none;}
+#toggle{display: none;}
+.menu-title{display: none;}
+/*END MENU*/
 
+/*HOMEPAGE*/
+.meta, .links, .posts{
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-family: Century Gothic, sans-serif;
+    vertical-align: text-top;
+}
+.posts .post-title{text-align: center;}
+.posts .post-title a, .posts .post-title a:hover, .posts .post-title a:link, .posts .post-title a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.meta p, .links p, .posts p {
+    font-family: 'Century Gothic', sans-serif;
+}
+.bottom-nav{
+    text-align: center; 
+    margin: auto;
+}
+.bottom-nav a, .bottom-nav a:link, .bottom-nav a:visited, .bottom-nav a:hover{
+    color: #000; 
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+/*END HOMEPAGE*/
+
+/*SINGLE PAGE*/
+#left{}
+#left .meta, #left .links{
+    background-color: #1e1e1e;
+    color: #ddd;
+    padding: 5px;
+}
+.meta h2{
+    text-align: center;
+    font-size: 1.3em;
+}
+.entry{
+    background: #1e1e1e;
+    color: #ddd;
+    font-family: 'Century Gothic', sans-serif;
+}
+.entry h2{
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 2em;
+}
+.entry p {
+    font-family: 'Century Gothic', sans-serif;
+}
+/*END SINGLE PAGE*/
+
+/*COMMENTS*/
+.comment-single{
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 925px;
+    margin: 10px 0px 0px 5px;
+
+}
+#commentform p{margin: 5px 10px;}
+#commentform label{display:inline-block;width: 275px; margin:0px 0px 5px 10px;}
+.commentlist{
+    margin: 0px 0px 0px 15px;
+    padding-bottom: 10px;
+}
+#respond{margin-left: 20px;}
+#comments{padding: 5px 0px 5px 5px;}
+#respond h3{padding: 5px 0px 0px 10px;}
+#respond input{width: 150px; border: solid #51ccd9 1px;}
+#respond textarea{
+    width:850px;
+    height: 120px;
+ }
+ /*END COMMENTS*/
 
 @media screen and (min-width: 960px) and (max-width: 2440px){
     body{}
-    #wrap{ width: 960px; margin:30px auto;}
+    #wrap{
+        width: 960px; 
+        margin:30px auto;
+    }
     header{}
     .head{
-        width: 100%;
+        min-width: 906px;
         background-color: #1e1e1e;
         height: 50px;
         }
-        .header-img{display: inline-block;}
-    .head img{height: 50px; width: 200px;}
+    .header-img{
+        display: inline-block;
+        height: 50px; 
+        width: 200px;
+    }
+    .head img{}
     nav{}
     .top-nav{
         margin: 0px 0px 0px 10px;
@@ -81,10 +158,6 @@
     .top-nav ul li{
         height: 30px;
         width: 75px;
-        display: inline-block;
-        text-align: center;
-        color:#efefef;
-        font-size: 1.7em;
         margin: 10px;
         }
     
@@ -96,14 +169,10 @@
         width:300px;
         margin:5px;
         display:inline-block;
-        background-color: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
         .meta p, .links p, .posts p {
             margin: 5px 5px 5px 5px;
-            font-family: Century Gothic, sans-serif;
-            font-weight: 600;}
+        }
     /*END HOMEPAGE*/
     #left{float: left; width: 310px;}
     #left .meta, #left .links{margin: 5px;}
@@ -113,15 +182,10 @@
         width: 610px;
         min-height: 610px;
         margin: 5px 9px;
-        background: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
     .entry p {
         margin: 5px;
-        font-family: Century Gothic, sans-serif;
-        font-weight: 600;
-    }
+        }
     /*END SINGLE PAGE*/    
     .bottom-nav{text-align: center; margin: auto;}
     a,a:active, a:link, a:hover, a:visited{}
@@ -129,15 +193,23 @@
 
 @media  screen and (min-width: 641px) and (max-width: 959px){
     body{}
-    #wrap{ width: 630px; margin:30px auto;}
+    #wrap{
+    width: 630px; 
+    margin:30px auto;
+    }
     header{}
     .head{
         width: 100%;
-        background-color: #1e1e1e;
         height: 50px;
         }
-        .header-img{display: inline-block;}
-    .head img{height: 50px; width: 200px;}
+    .header-img{
+        display: inline-block;
+        height: 50px; 
+        width: 200px;
+        }
+    .head img{
+
+    }
     nav{}
     .top-nav{
         margin: 0px 0px 0px 10px;
@@ -149,8 +221,6 @@
         width: 75px;
         display: inline-block;
         text-align: center;
-        color:#efefef;
-        font-size: 1.7em;
         margin: 10px 10px;
         }
     
@@ -158,18 +228,15 @@
     .content-home{}
     .meta{}
     .meta, .links, .posts{
-        height:100px;
+        height:300px;
         width:300px;
         margin:5px;
         display:inline-block;
-        background-color: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
-        }
-        .meta p, .links p, .posts p {
-            margin: 5px 5px 5px 5px;
-            font-family: Century Gothic, sans-serif;
-            font-weight: 600;}
+
+    }
+    .meta p, .links p, .posts p {
+        margin: 5px 5px 5px 5px;
+    }
     /*END HOMEPAGE*/
     #left{ width: 620px;}
     #left .meta, #left .links{margin: 5px 4px;}
@@ -179,75 +246,99 @@
         width: 610px;
         min-height: 610px;
         margin: 5px 5px;
-        background: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
     .entry p {
         margin: 5px;
-        font-family: Century Gothic, sans-serif;
-        font-weight: 600;
     }
     /*END SINGLE PAGE*/    
-    .bottom-nav{text-align: center; margin: auto;}
-    a,a:active, a:link, a:hover, a:visited{}
+
+    /*COMMENTS*/
+    .comment-single{
+        background-color: #1e1e1e;
+        color: #fff;
+        width: 610px;
+        margin: 10px 0px 0px 5px;
+
+    }
+    #commentform p{margin: 5px 10px;}
+    #commentform label{display:inline-block;width: 275px; margin:0px 0px 5px 10px;}
+    .commentlist{
+        margin: 0px 0px 0px 15px;
+        padding-bottom: 10px;
+    }
+    #respond{margin-left: 20px;}
+    #comments{padding: 5px 0px 5px 5px;}
+    #respond h3{padding: 5px 0px 0px 10px;}
+    #respond input{width: 150px; border: solid #51ccd9 1px;}
+    #respond textarea{
+        width: 525px;
+        height: 120px;
+     }
+     /*END COMMENTS*/
 }
 
 @media screen and (min-width: 9px) and (max-width: 640px){
     body{}
-    #wrap{ width: 320px; margin:30px auto;}
+    #wrap{
+        width: 320px; 
+        margin:30px auto;
+    }
     header{}
     .head{
-        max-width: 769px;
-        background-color: #1e1e1e;
-        height: 50px;
+        min-width: 320px;
         }
-        .header-img{display: inline-block;}
-    .head img{height: 50px; width: 100px;}
-    nav{}
-    .top-nav{
-         margin: 5px 0px 0px 10px;
-        display: inline-block;
-        width: 190px;
+        .header-img{
+            display: inline-block;
+            height: 50px; 
+            width: 53px;
+        }
+    .head img{
 
         }
-    .top-nav ul li{
-        height: 30px;
-        width: 75px;
+    nav{}
+    .top-nav{display: none; min-}
+    .menu-show{
+        margin: 0px 0px 0px 5px;
+        display: inline-block;
+        width: 190px;
+        vertical-align: top;
+        }
+    .menu-show ul li{
+        width: 250px;
         display: inline-block;
         text-align: center;
-        color:#efefef;
-        margin: 10px 15px;
+        margin: 0px 5px;
+        padding: 5px;
+        font-size: 1.7em;
         }
-    .top-nav ul{display: none;}
-    .top-nav select{
-        display: block;
-        width: 190px;
-        height: 40px;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .top-nav select:before{content: 'menu';}
-    .top-nav select option{display: block; text-align: center;}
-    
+    .menu-show ul{display: inline-block;}
+    .menu-show a, .menu-show a:hover, .menu-show a:link, .menu-show a:visited{ color: #fff; text-decoration: none;}
+    /*.top-nav ul{display: none;}*/
+
+    #toggle{
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 10px;
+        height: 50px;
+        vertical-align: top;
+    }    
     /*HOMEPAGE*/
     .content-home{margin: auto;}
     .meta{}
     .meta, .links, .posts{
-        height:50px;
+        min-height:50px;
         width:300px;
         margin:5px 0px;
         display:inline-block;
-        background-color: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
-        .meta p, .links p, .posts p {
-            margin: 5px 5px 5px 5px;
-            font-family: Century Gothic, sans-serif;
-            font-weight: 600;}
+    .meta p, .links p, .posts p {
+        margin: 5px 5px 5px 5px;
+    }
     /*END HOMEPAGE*/
-    #left{float: left; width: 310px;}
+    #left{
+        float: left; 
+        width: 310px;
+    }
     #left .meta, #left .links{margin: 5px;}
     /*SINGLE PAGE*/
     .entry{
@@ -255,94 +346,133 @@
         width: 300px;
         min-height: 610px;
         margin: 5px 5px;
-        background: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
     .entry p {
         margin: 5px;
-        font-family: Century Gothic, sans-serif;
-        font-weight: 600;
+    }
+    .entry p img{
+        width: 100%;
     }
     /*END SINGLE PAGE*/    
-    .bottom-nav{text-align: center; margin: auto;}
-    a,a:active, a:link, a:hover, a:visited{}
+
+    /*COMMENTS*/
+    .comment-single{
+        background-color: #1e1e1e;
+        color: #fff;
+        width: 300px;
+        margin: 10px 0px 0px 5px;
+
+    }
+    #commentform p{margin: 5px 10px;}
+    #commentform label{display:inline-block;width: 275px; margin:0px 0px 5px 10px;}
+    .commentlist{
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 10px;
+    }
+    ol.commentlist{
+        margin: 0px 0px 0px 10px;
+        padding-bottom: 10px;
+    }
+    #respond{
+        margin-left: 0px;
+        border-top: 1px solid #efefef;
+    }
+    #comments{padding: 5px 0px 5px 5px;}
+    #respond h3{padding: 5px 0px 0px 10px;}
+    #respond input{width: 150px; border: solid #51ccd9 1px;}
+    #respond textarea{
+        width: 280px;
+        height: 120px;
+     }
+     /*END COMMENTS*/
 }
 
 @media screen and (max-device-width: 768px) and (orientation: portrait){
-   body{}
-    #wrap{ width: 100%; margin:30px auto;}
+     body{}
+    #wrap{
+        width: 320px; 
+        margin:30px auto;
+    }
     header{}
     .head{
-        width: 100%;
-        background-color: #1e1e1e;
-        height: 50px;
+        min-width: 320px;
         }
-        .header-img{display: inline-block;}
-    .head img{height: 50px; width: 100px;}
-    nav{}
-    .top-nav{
-        margin: 5px 0px 0px 10px;
-        display: inline-block;
-        width: 190px;
+        .header-img{
+            display: inline-block;
+            height: 50px; 
+            width: 53px;
+        }
+    .head img{
 
         }
-    .top-nav ul li{
-        height: 30px;
-        width: 75px;
+    nav{}
+    .top-nav{display: none; min-}
+    .menu-show{
+        margin: 5px 0px 0px 5px;
+        display: inline-block;
+        width: 190px;
+        vertical-align: top;
+        }
+    .menu-show ul li{
+        width: 250px;
         display: inline-block;
         text-align: center;
         color:#efefef;
-        margin: 10px 15px;
+        margin: 0px 5px;
+        padding: 5px;
+        color:#efefef;
+        font-size: 1.7em;
         }
-    .top-nav ul{display: none;}
-    .top-nav select{
-        display: block;
-        width: 190px;
-        height: 40px;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .top-nav select:before{content: 'mrnu';}
-    .top-nav select option{display: block; text-align: center;}
-    
+    .menu-show ul{display: inline-block;}
+    .menu-show a, .menu-show a:hover, .menu-show a:link, .menu-show a:visited{ color: #fff; text-decoration: none;}
+    /*.top-nav ul{display: none;}*/
+
+    #toggle{
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 10px;
+        height: 50px;
+        vertical-align: top;
+    }    
     /*HOMEPAGE*/
     .content-home{margin: auto;}
     .meta{}
     .meta, .links, .posts{
-        max-height:300px;
+        min-height:50px;
         width:300px;
-        margin:5px;
+        margin:5px 0px;
         display:inline-block;
-        background-color: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
         }
-        .meta p, .links p, .posts p {
-            margin: 5px 5px 5px 5px;
-            font-family: Century Gothic, sans-serif;
-            font-weight: 600;}
+    .meta p, .links p, .posts p {
+        margin: 5px 5px 5px 5px;
+    }
     /*END HOMEPAGE*/
-    #left{ width: 100px;}
+    #left{
+        float: left; 
+        width: 310px;
+    }
     #left .meta, #left .links{margin: 5px;}
-    .meta{display: none;}
-
     /*SINGLE PAGE*/
     .entry{
         display: inline-block;
         width: 300px;
         min-height: 610px;
-        margin: 5px 9px;
-        background: #000;
-        color: #ddd;
-        font-family: Century Gothic, sans-serif;
+        margin: 5px 5px;
         }
     .entry p {
         margin: 5px;
-        font-family: Century Gothic, sans-serif;
-        font-weight: 600;
     }
     /*END SINGLE PAGE*/    
-    .bottom-nav{text-align: center; margin: auto;}
+    .bottom-nav{
+        text-align: center; 
+        margin: auto;
+    }
     a,a:active, a:link, a:hover, a:visited{}
  }
+
+
+
+ /*MISC*/
+ #tweetblender-2 { 
+list-style: none outside none;
+}
